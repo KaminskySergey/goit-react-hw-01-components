@@ -11,7 +11,7 @@ function getRandomHexColor() {
 export function Statistics({title, stats}){
     return (
         <Box as="section" display="flex" justifyContent="space-between" m={32} alignItems="center" flexDirection="column"  bg="rgb(114, 15, 220)"   boxShadow="0 1px 4px rgb(0 0 0), -23px 0 20px -23px rgb(0 0 0 / 80%), 23px 0 20px -23px rgb(0 0 0 / 80%), 0 0 40px rgb(0 0 0 / 10%) inset" >
-  <Title>{title}</Title>
+  {title && <Title>{title}</Title>}
 
   <StatsList>
     {stats.map(el => (
